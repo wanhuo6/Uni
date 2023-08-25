@@ -1,0 +1,49 @@
+.marginTop {
+	margin-top: 20rpx;
+}
+
+.marginBottom {
+	margin-bottom: 20rpx;
+}
+
+.marginLeft {
+	margin-left: 20rpx;
+}
+
+.marginRight {
+	margin-right: 20rpx;
+}
+
+.flex {
+	display: flex;
+}
+
+.fillWidth {
+	width: 100%;
+}
+
+.center_width {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.center_height {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.center_parent {
+	margin: auto;
+}
+
+.uni-padding-wrap {
+	/* width:690rpx; */
+	padding: 0 30rpx;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	box-sizing: border-box;
+}
