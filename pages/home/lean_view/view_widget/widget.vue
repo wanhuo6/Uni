@@ -1,10 +1,19 @@
 <template>
 	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view class="text-area">
-			<text class="title">{{title}}</text>
-		</view>
+		<button class="marginTop" type="primary" loading="true">按钮</button>
+		<button class="marginTop" type="primary" loading="true" plain="true">按钮</button>
+		<button class="marginTop" type="primary" loading="true" plain="false" disabled="true">按钮</button>
+		<button class="marginTop" type="primary" plain="true" disabled="false">按钮</button>
+		<radio-group class="marginTop">
+			<label class="radio">
+				<radio value="r1" checked="true" />A
+			</label>
+			<label class="radio marginLeft">
+				<radio value="r2" />B
+			</label>
+		</radio-group>
 	</view>
+
 </template>
 
 <script>

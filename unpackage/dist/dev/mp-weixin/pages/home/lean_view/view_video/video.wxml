@@ -1,0 +1,1 @@
+<view class="content"><video class="fillWidth" id="myVideo" src="{{videoUrl}}" controls="{{true}}" poster="https://web-assets.dcloud.net.cn/unidoc/zh/poster.png" enable-auto-rotation="enableAutoRotation" data-event-opts="{{[['error',[['videoErrorCallback',['$event']]]]]}}" binderror="__e"></video></view>

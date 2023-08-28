@@ -1,0 +1,1 @@
+<view class="content"><block wx:for="{{logList}}" wx:for-item="item" wx:for-index="index" wx:key="index"><block><text class="centerWidth">{{item}}</text></block></block></view>

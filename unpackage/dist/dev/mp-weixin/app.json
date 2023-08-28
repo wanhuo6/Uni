@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/net/net",
+    "pages/logs/logs",
+    "pages/mine/mine",
+    "pages/home/lean_view/view_layout/layout",
+    "pages/home/lean_view/view_banner/banner",
+    "pages/home/lean_view/view_list/list",
+    "pages/home/lean_view/view_widget/widget",
+    "pages/home/lean_view/view_video/video",
+    "pages/home/lean_view/view_live/live"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#007AFF",
+    "borderStyle": "black",
+    "backgroundColor": "#F8F8F8",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "static/tabBar/ic_component.png",
+        "selectedIconPath": "static/tabBar/ic_component_hl.png"
+      },
+      {
+        "pagePath": "pages/net/net",
+        "text": "网络",
+        "iconPath": "static/tabBar/ic_api.png",
+        "selectedIconPath": "static/tabBar/ic_api_hl.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志",
+        "iconPath": "static/tabBar/ic_wechat.png",
+        "selectedIconPath": "static/tabBar/ic_wechat_hl.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "个人中心",
+        "iconPath": "static/tabBar/ic_cloud.png",
+        "selectedIconPath": "static/tabBar/ic_cloud_hl.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

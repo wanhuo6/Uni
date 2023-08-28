@@ -4,7 +4,7 @@
 		<button class="marginTop" type="primary" @click="goBanner()">轮播图</button>
 		<button class="marginTop" type="primary" @click="goList()">列表</button>
 		<button class="marginTop" type="primary" @click="goWidget()">控件</button>
-		<button class="marginTop" type="primary" @click="goLayout()">弹窗</button>
+		<button class="marginTop" type="primary" @click="goDailog()">弹窗</button>
 		<button class="marginTop" type="primary" @click="goVideo()">视频</button>
 		<button class="marginTop" type="primary" @click="goLive()">直播</button>
 	</view>
@@ -14,39 +14,61 @@
 	export default {
 		data() {
 			return {
-				title: 'Hello Uni'
+				//title: 'Hello Uni'
 			}
 		},
 		onLoad() {
 
 		},
 		methods: {
-			goLayout: function() {
+			goLayout() {
 				uni.navigateTo({
 					url: '/pages/home/lean_view/view_layout/layout'
 				});
 			},
-			goBanner: function() {
+			goBanner() {
 				uni.navigateTo({
 					url: 'lean_view/view_banner/banner'
 				})
 			},
-			goList: function() {
+			goList() {
 				uni.navigateTo({
 					url: 'lean_view/view_list/list'
 				})
 			},
-			goWidget: function() {
+			goDailog() {
+				uni.showModal({
+					title: '提示',
+					content: '确定要退出吗',
+					success(res) {
+						if (res.confirm) {
+							uni.showToast({
+								title: '成功',
+								icon: 'success',
+								duration: 2000
+							})
+						} else if (res.cancel) {
+							uni.showToast({
+								title: '取消',
+								icon: 'error',
+								duration: 2000
+							})
+						}
+					}
+
+				})
+			},
+			goWidget() {
 				uni.navigateTo({
 					url: 'lean_view/view_widget/widget'
 				})
 			},
-			goVideo: function() {
+			goVideo() {
 				uni.navigateTo({
 					url: 'lean_view/view_video/video'
 				})
 			},
-			goLive: function() {
+			goLive() {
 				uni.navigateTo({
 					url: 'lean_view/view_live/live'
 				})
@@ -56,13 +78,4 @@
 </script>
 
 <style>
-	.text-area {
-		display: flex;
-		justify-content: center;
-	}
-
-	.title {
-		font-size: 36rpx;
-		color: #8f8f94;
-	}
 </style>

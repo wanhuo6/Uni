@@ -1,0 +1,12 @@
+
+.item {
+	margin: 20rpx;
+	background-color: coral;
+	height: 300rpx;
+	display: flex;
+	border-radius: 20rpx;
+}
+.item_text {
+	height: auto;
+}
+

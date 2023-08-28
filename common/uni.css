@@ -22,23 +22,18 @@
 	width: 100%;
 }
 
-.center_width {
+.centerWidth {
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.center_height {
+.centerHeight {
 	margin-top: auto;
 	margin-bottom: auto;
 }
 
-.center_parent {
+.centerParent {
 	margin: auto;
-}
-
-.uni-padding-wrap {
-	/* width:690rpx; */
-	padding: 0 30rpx;
 }
 
 .content {

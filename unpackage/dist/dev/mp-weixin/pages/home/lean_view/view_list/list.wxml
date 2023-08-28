@@ -1,0 +1,1 @@
+<view class="content"><block wx:for="{{dataList}}" wx:for-item="item" wx:for-index="index" wx:key="index"><view><view class="item"><text class="item_text centerParent" style="color:white;">{{"条目："+item}}</text></view></view></block></view>
